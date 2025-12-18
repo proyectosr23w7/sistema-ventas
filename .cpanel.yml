@@ -1,6 +1,18 @@
 ---
 deployment:
   tasks:
+    # Mensaje inicial
+    - echo "===== Iniciando deploy de Laravel + Vue ====="
+
+    # Exportar variable para Composer (opcional, seguro en hosting limitado)
     - export COMPOSER_HOME="$HOME/.composer"
-    - echo "Deploy iniciado"
-    - echo "No hay shell disponible, se asume que vendor y build ya están subidos"
+
+    # Como no hay shell, asumimos que vendor y build ya están subidos
+    - echo "No hay shell disponible, se asume que vendor y public/build ya están en el repo"
+
+    # Copiar archivos desde repositorio a Deploy Path
+    - echo "Deploy automático: copiando archivos al Deploy Path"
+    - cp -r /home/proyect2/repositories/sistema-ventas/* /home/proyect2/sistemas/empresa1/sistema-ventas/
+
+    # Mensaje final
+    - echo "===== Deploy finalizado para empresa1 ====="
