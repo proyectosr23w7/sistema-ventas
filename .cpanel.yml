@@ -12,7 +12,7 @@ deployment:
 
     # Copiar archivos desde repositorio a Deploy Path
     - echo "Deploy automático: copiando archivos al Deploy Path"
-    - cp -r /home/proyect2/repositories/sistema-ventas/* /home/proyect2/sistemas/empresa1/sistema-ventas/
+    - cp -r /home/proyect2/repositories/sistema-ventas/* /home/proyect2/sistemas/demosistemaventas/sistema-ventas/
 
     # Mensaje final
-    - echo "===== Deploy finalizado para empresa1 ====="
+    - echo "===== Deploy finalizado para demo sistema ====="
