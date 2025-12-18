@@ -1,0 +1,6 @@
+---
+deployment:
+  tasks:
+    - export COMPOSER_HOME="$HOME/.composer"
+    - echo "Deploy iniciado"
+    - echo "No hay shell disponible, se asume que vendor y build ya están subidos"
