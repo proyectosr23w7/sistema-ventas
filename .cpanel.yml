@@ -7,7 +7,8 @@ deployment:
 
     - echo "No hay shell disponible, se asume que vendor y public/build ya están en el repo"
 
-    - echo "Deploy automático: copiando archivos al Deploy Path"
+    - echo "===== Deploy multiempresa ====="
+    
     - cp -r repositories/sistema-ventas/* sistemas/demosistemaventas/sistema-ventas/
 
     - echo "===== Deploy finalizado para demo sistema ====="
