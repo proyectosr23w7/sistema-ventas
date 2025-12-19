@@ -11,8 +11,8 @@ deployment:
     
     - cp -r /home/proyect2/repositories/sistema-ventas/* /home/proyect2/sistemas/demosistemaventas/sistema-ventas/
 
+    - export DEPLOYPATH=/home/proyect2/sistemas/demosistemaventas/sistema-ventas
     - cd $DEPLOYPATH
-    
     - php artisan migrate --force || true
 
 
