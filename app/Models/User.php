@@ -49,4 +49,16 @@ class User extends Authenticatable
             'two_factor_confirmed_at' => 'datetime',
         ];
     }
+
+    public function roles()
+    {
+        return $this->belongsToMany(Role::class);
+    }
+
+    public function permisos()
+    {
+        return $this->belongsToMany(Permiso::class, 'user_permiso')
+            ->withPivot('tipo')
+            ->withTimestamps();
+    }
 }
