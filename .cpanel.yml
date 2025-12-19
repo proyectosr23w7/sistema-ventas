@@ -11,4 +11,11 @@ deployment:
     
     - cp -r /home/proyect2/repositories/sistema-ventas/* /home/proyect2/sistemas/demosistemaventas/sistema-ventas/
 
+    - cd $DEPLOYPATH
+    
+    - php artisan migrate --force || true
+
+
     - echo "===== Deploy finalizado para demo sistema ====="
+
+
